@@ -17,6 +17,13 @@ class Doors_Wheels
     @type.push(type, doors)
   end
 
-
+  def wheels(object, wheels)
+    @wheel_number += wheels
+    @object.push(object, wheels)
+  end
+  
+  def show
+    @total.total(@object, @type, @door_number, @wheel_number)
+  end
 
 end
